@@ -7,7 +7,8 @@ import java.util.Map;
 
 public final class Projector {
 
-	private Projector() {}
+	private Projector() {
+	}
 
 	public static <T> Projection<T> project(T obj, List<String> fieldList) {
 		Map<String, Object> result = new HashMap<>();
