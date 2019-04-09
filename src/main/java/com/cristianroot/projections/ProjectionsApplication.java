@@ -1,4 +1,5 @@
-package com.cristianroot.projections;
+package
+		 com.cristianroot.projections;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
