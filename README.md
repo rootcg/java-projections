@@ -1,2 +1,2 @@
 # spring-projections
-Mongodb-like projections applied to REST API
+Mongodb-like projections applied to Java Objects
