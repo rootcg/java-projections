@@ -1,4 +1,4 @@
-package com.cristianroot.projections.projections;
+package com.cristianroot.projections;
 
 import com.cristianroot.projections.annotations.ProjectionIgnore;
 

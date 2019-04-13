@@ -1,4 +1,4 @@
-package com.cristianroot.projections.projections;
+package com.cristianroot.projections;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializable;
@@ -13,7 +13,8 @@ public final class Projection<T> implements JsonSerializable {
 
 	private Map<String, Object> projectionResult;
 
-	private Projection() {}
+	private Projection() {
+	}
 
 	static <Y> Projection<Y> of(Map<String, Object> projectionResult) {
 		Projection<Y> projection = new Projection<>();
