@@ -1,5 +1,7 @@
 package com.cristianroot.projections.entities;
 
+import com.cristianroot.projections.annotations.ProjectionIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.List;
@@ -14,6 +16,7 @@ public class Person {
 	@NotNull
 	private String name;
 
+	@ProjectionIgnore
 	@NotNull
 	private int age;
 

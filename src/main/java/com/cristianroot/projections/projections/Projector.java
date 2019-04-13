@@ -1,5 +1,7 @@
 package com.cristianroot.projections.projections;
 
+import com.cristianroot.projections.annotations.ProjectionIgnore;
+
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.List;
@@ -15,7 +17,7 @@ public final class Projector {
 
 		for (Field field : obj.getClass().getDeclaredFields()) {
 			try {
-				if (fieldList.contains(field.getName())) {
+				if (!field.isAnnotationPresent(ProjectionIgnore.class) && fieldList.contains(field.getName())) {
 					field.setAccessible(true);
 					result.put(field.getName(), field.get(obj));
 				}
